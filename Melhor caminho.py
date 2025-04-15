@@ -61,7 +61,6 @@ print(f"📏 Distância total: {distancia_total} km\n")
 print("📊 Tabela de distâncias:")
 print("Estado  Distância (km)")
 for estado, dist in sorted(distancias.items(), key=lambda x: x[1]):
-
     print(f"{estado:5} {dist:>8} km")
 
 # ---------- COORDENADAS PARA PLOTAGEM ----------
@@ -74,7 +73,7 @@ coordenadas_estados = {
 }
 
 # ---------- PLOTAR ROTA SOBRE IMAGEM ----------
-img = Image.open("C:/Users/Dell/Documents/FATEC/Atividades/3_SEM/Analise_de_Algoritimos/mapaBrasil.jpg")  # Imagem deve estar no mesmo diretório
+img = Image.open("mapaBrasil.png")  # Caminho relativo para uso no repositório
 fig, ax = plt.subplots(figsize=(10, 10))
 ax.imshow(img)
 
@@ -91,8 +90,6 @@ for estado in rota:
 
 # Remover eixos
 ax.axis('off')
-plt.title("Rota ótima de bicicleta: Cidade de Goiás (GO) até Boa Vista (RR)", fontsize=14)
+plt.title("Rota ótima de bicicleta: GO até RR", fontsize=14)
 plt.savefig("melhor_caminho.png", dpi=300)
 plt.show()
-
-
