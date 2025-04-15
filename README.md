@@ -27,6 +27,8 @@ A proposta é resolver um problema de caminho mínimo em um mapa simplificado, a
 > Um exemplo de saída seria:  
 > `Melhor caminho de A até G: A → B → E → G (Total: 23)`
 
+## [Mapa utilizado para destacar as rotas](./mapaBrasil.png)
+
 ## 📁 Arquivos
 
 - `melhor_caminho.py`: Script principal com todo o código.
